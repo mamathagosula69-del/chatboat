@@ -13,6 +13,7 @@ api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
     st.error("GEMINI_API_KEY is not found in the .env file.")
     st.stop()
+    
 
 # Create Gemini client
 client = genai.Client(api_key=api_key)
